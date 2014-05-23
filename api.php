@@ -1,13 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-   <head>
-      <title>FileController.PHP</title>
-      <link rel="stylesheet" href="css/main.css">
-    </head>
-<body>
-    <?php
+<?php
     $dir = "YOUR_DIRECTORY/";
-    $ext_to_show = array("pdf","doc","docx","xls","xlsx","txt","pps","odt");
+    $ext_to_show = array("pdf","doc","docx","xls","xlsx","txt","pps","odt");// only formats supports in google view api
     $target = "_self";
     $no_files = "No personal files";
 
@@ -39,6 +32,4 @@
           echo ' &bull; <a href="http://YOUR_URL/'.$dir. $file.'&embedded=true" target="'. $target. '">'. $file ."</a><br>\n";
        }
     }
-    ?>
-</body>
-</html>
+?>
